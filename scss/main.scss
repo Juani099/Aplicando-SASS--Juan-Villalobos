@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+	font-family: 'Oswald', sans-serif;
+}
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+	font-family: 'EB Garamond', serif;
+}
+.navlocal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: #1b3039 solid 2px;
+	width: 100%;
+	div {
+		ul {
+			li {
+				padding: 20px;
+				font-size: x-large;
+				font-family: 'EB Garamond', serif;
+				&:hover {
+					transform: scale(1.5);
+				}
+			}
+		}
+	}
+}
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	padding: 5px 10%;
+	width: 100%;
+	.logo {
+		cursor: pointer;
+		img {
+			height: 120px;
+			width: auto;
+			transition: all 0.3s;
+			margin-top: 20px;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+}
+.carrousel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+.footer {
+	background-color: rgba(0, 0, 0, 0.925);
+	height: 75px;
+	margin-top: 700px;
+	ul {
+		color: black;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		p {
+			color: white;
+		}
+		li {
+			a {
+				color: white;
+			}
+		}
+	}
+}
+.cartas {
+	margin-top: 50px;
+	div {
+		padding: 15px;
+	}
+}
+.section {
+	h2 {
+		text-align: center;
+	}
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.cardp {
+	background-color: #10aaec;
+	transition: 0.3s;
+	border-radius: 10px;
+	&:hover {
+		transform: scale(1.1);
+		background-color: #8cdbff;
+		transition: 0.3s;
+	}
+}
+.cardg {
+	background-color: #10aaec;
+	transition: 0.3s;
+	border-radius: 10px;
+	&:hover {
+		transform: scale(1.1);
+		background-color: #cc40f7;
+		transition: 0.3s;
+	}
+}
+.cardz {
+	background-color: #10aaec;
+	transition: 0.3s;
+	border-radius: 10px;
+	&:hover {
+		transform: scale(1.1);
+		background-color: #ff6842;
+		transition: 0.3s;
+	}
+}
+input {
+	background-color: #8cdbff;
+	border: none;
+	transition: 1s;
+	&:focus {
+		background-color: white;
+		border: none;
+		transform: scale(1.1);
+	}
+}
+@media (max-width: 500px) {
+	.footer {
+		ul {
+			display: grid;
+			grid-template-columns: 1, 1fr;
+			li {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}
+@media (max-width: 900px) {
+	.galeria {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+}
+@media (max-width: 600px) {
+	.galeria {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.section {
+		iframe {
+			width: auto;
+			height: auto;
+		}
+	}
+}
